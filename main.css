@@ -1,0 +1,248 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000; /* Negro más intenso */
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(to bottom, #330033, #660066);
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Contenido */
+section {
+    padding: 20px;
+}
+
+/* Productos */
+#productos {
+    background-color: #1a1a1a;
+}
+
+#productos h2 {
+    color: #ffffff;
+}
+
+.slider {
+    width: 80%;
+    margin: auto;
+}
+
+.slide {
+    text-align: center;
+}
+
+.slide img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.slide h3 {
+    color: #ffffff;
+}
+
+.slide p {
+    color: #cccccc;
+}
+
+.carousel {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 300%; /* Cada slide ocupa 33.33% */
+}
+
+.slide {
+    width: 100%;
+    transition: 0.5s;
+}
+
+input[name="slides"] {
+    display: none;
+}
+
+input[name="slides"]:checked + .slides {
+    transform: translateX(-33.33%); /* Mueve los slides a la izquierda */
+}
+
+.controls {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.controls label {
+    cursor: pointer;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    background-color: #aaa;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+input[name="slides"]:checked + .slides + .controls label {
+    background-color: #333; /* Resalta el control activo */
+}
+
+
+/* Servicio Técnico */
+#servicio-tecnico {
+    background: linear-gradient(to bottom, #330033, #660066);
+}
+
+#servicio-tecnico h2 {
+    color: #ffffff;
+}
+
+#servicio-tecnico p {
+    color: #cccccc;
+}
+
+#servicio-tecnico form label {
+    color: #ffffff;
+}
+
+#servicio-tecnico form input[type="text"],
+#servicio-tecnico form input[type="email"],
+#servicio-tecnico form input[type="tel"],
+#servicio-tecnico form input[type="datetime-local"],
+#servicio-tecnico form input[type="submit"] {
+    background-color: #ffffff;
+    color: #330033;
+    border: none;
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#servicio-tecnico form input[type="submit"] {
+    background-color: #330033;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#servicio-tecnico form input[type="submit"]:hover {
+    background-color: #660066;
+}
+
+#ofertas {
+    padding: 20px;
+}
+
+.oferta {
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    position: relative;
+    color:#ffffff
+}
+
+.oferta img {
+    max-width: 100%;
+    height: auto;
+}
+
+.descuento-sticker {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+.precio-anterior {
+    text-decoration: line-through;
+}
+
+.precio-anterior span,
+.precio-actual span {
+    font-weight: bold;
+}
+#contacto-breve {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacto {
+    width: calc(33.33% - 10px); /* Ajusta el tamaño de cada contacto */
+}
+
+.contacto img {
+    width: 50px;
+    height: 50px;
+    display: block; /* Para evitar el espacio extra debajo de las imágenes */
+    margin: auto; /* Centra la imagen horizontalmente */
+    color: #ffffff;
+}
+
+.contacto p {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.contacto a {
+    text-decoration: none;
+    color: inherit;
+}
+#quienes-Somos{
+    background-color: #ff0000;
+    padding: 20px;
+    color:#ffffff
+}
+
+#quienes-Somos h2{
+    color: #ffffff;
+}
+
+#quienes-Somos p {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+/* Pie de página */
+footer {
+    background: linear-gradient(to bottom, #330033, #660066);
+    color: #ffffff;
+    text-align: center;
+    padding: 40px;
+
+}
